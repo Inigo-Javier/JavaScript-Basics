@@ -36,7 +36,7 @@
         console.log("*****ejemplo con LET*****")
         let musica2 = 'ROCK'
         console.log('variable musica antes del bloque', musica2)
-        
+
         {
             let musica2 = "CLASICA de Mozart"
             console.log('variable musica dentro del bloque', musica2)
@@ -98,6 +98,34 @@
 
         const valorFuncion = funcionDevuelveValor()
         console.log(valorFuncion)//devuelve el valor de la funcion(return) por consola.
+
+        console.log("---funcion con parametros---")
+        function saludo(nombre = "desconocido", edad = 0) {
+            console.log(`hola me llamo ${nombre} y tengo ${edad} años de edad`)
+        }
+        saludo()
+        saludo("iñigo", 33)
+        saludo("iñigo", "33")
+
+        console.log("*****funciones declaradas vs funciones expresadas*****")
+        console.log("---funciones declaradas---")
+        duncionDeclarada()//javascript hace hoisting(elevacion de la funcion); JS ordena primero variables y luefo funciones.Por eso podemos invocar antes de declarar. 
+
+        function duncionDeclarada() {
+            console.log("Esto es una funcion declarada, puede invocarse en cualquier parte de nuestro código, incluso antes de que la función sea declarada")
+        }
+
+        duncionDeclarada()
+
+        console.log("---funciones expresadas---")
+        //utilizar las funciones como expresiones, es decir, crear una funcion y sasignarsela dinámicamente a una variable.
+
+        //funcion anónima:
+        funcionExpresada()//da error ReferenceError.--
+        const funcionExpresada = function () {
+            console.log("esto es una funcion expresada, es decir que, una funcion que se le ha asignado como valor a una variable, si invocamos esta funcion antes de su declaracion JS nos dirá...")
+        }
+        funcionExpresada()//se muestra por consola.
 
     </script>
 </body>

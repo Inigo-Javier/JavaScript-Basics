@@ -40,10 +40,10 @@ JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
 
 
 
-|CREAR FUNCIONES	|	TIPOS                        |	
-|-------------------|:-------------------------------|
-| funcion declarada |  function funcionEjemplo(){}   |   
-| funcion expresada |  const funcionEjemplo= ()=>{}  |            
+|CREAR FUNCIONES	                 |	TIPOS                                         |	
+|------------------------------------|:-----------------------------------------------|
+| funcion declarada                  |  function funcionDeclarada(){código}           |   
+| funcion expresada(funcion anónima) |  const funcionExpresada = function()=>{código} |            
 
 
 
