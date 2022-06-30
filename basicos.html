@@ -50,6 +50,7 @@
         let string = "iñigo"
         let stringNumero = "1234"
         let numero2 = 123
+        let numero3 = 1.2345
         let concatenacion1 = numero + string;
         let concatenacion2 = numero + stringNumero;
         let concatenacion3 = numero + numero2;
@@ -63,6 +64,12 @@
         console.log(typeof concatenacion1, "------------>", concatenacion1)
         console.log(typeof concatenacion2, "------------>", concatenacion2)
         console.log(typeof concatenacion3, "------------>", concatenacion3)
+        console.log("------------metodos del objeto Number----------")
+
+        console.log("método toFixed()", "------------>", numero3.toFixed(1))//modifica la cantidad de decimales
+        console.log("método parseInt()", "------------>", parseInt(numero3))//devuelve parte entera
+
+
         console.log("----------------------------------------------------------------")
 
 
