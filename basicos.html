@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de JavaScript</title>
+</head>
+
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <script>
+        console.log("***** VAR y LET*****")
+        var hola = "hola var"
+        let hello = "hello let"
+        console.log(hola)
+        console.log(hello)
+        console.log(window.hola)
+        console.log(window.hello)
+
+
+        // VAR vs LET
+        console.log("*****EJEMPLOS VAR y LET*****")
+        //ambito de bloque
+        console.log("*****ejemplo con VAR*****")
+        var musica = 'ROCK'
+        console.log('variable musica antes del bloque', musica)
+        //Esto es un bloque: ejemplo de hoisting
+        {
+            var musica = "CLASICA de Mozart"
+            console.log('variable musica dentro del bloque', musica)
+        }
+        console.log('variable musica despues del bloque', musica)
+        //Conclusión: los scopes de var son por funcion o global, por ello eleva(hoisting) el var dentro del bloque (var musica = "Clasica de Mozart") , lo saca de éste y sobreescribe a la primera.
+
+        console.log("*****ejemplo con LET*****")
+        let musica2 = 'ROCK'
+        console.log('variable musica antes del bloque', musica2)
+        //Esto es un bloque: ejemplo de hoisting
+        {
+            let musica2 = "CLASICA de Mozart"
+            console.log('variable musica dentro del bloque', musica2)
+        }
+        console.log('variable musica despues del bloque', musica2)
+        console.log("----------------------------------------------------------------")
+        console.log("***** ejemplo NUMEROS*****")
+        console.log("*****concatenacion numero + string*****")
+        //los datos enviados mediate formulario siempre son de tipo string, por lo tanto los numeros se transforman en tipo string.Por ello se deberá hacer un casting(o parsear);Esto quiere decir que se cambia el tipo de dato para, en este caso, realizar operaciones con números(operacion aritmética).
+        let numero = 1234;
+        let string = "iñigo"
+        let stringNumero = "1234"
+        let numero2 = 123
+        let concatenacion1 = numero + string;
+        let concatenacion2 = numero + stringNumero;
+        let concatenacion3 = numero + numero2;
+
+        console.log(concatenacion1)
+        console.log(concatenacion2)
+        console.log(concatenacion3)
+
+        console.log(typeof numero, "------------>", numero)
+        console.log(typeof string, "------------>", string)
+        console.log(typeof concatenacion1, "------------>", concatenacion1)
+        console.log(typeof concatenacion2, "------------>", concatenacion2)
+        console.log(typeof concatenacion3, "------------>", concatenacion3)
+        console.log("----------------------------------------------------------------")
+
+
+    </script>
+</body>
+
+</html>
