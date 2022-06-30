@@ -21,9 +21,9 @@ JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
 
 |Valores Primitivos |	EJEMPLO                |	Description                                                              |
 |-------------------|:-------------------------|:---------------------------------------------------------------------------:|
-|STRING             |	                       |	                                                                         |
-|NUMBER             |	                       |	                                                                         |
-|BOOLEAN	        |	                       |	                                                                         |
+|STRING             |let texto = "javascript"  |Cadenas de texto                                                             |
+|NUMBER             |let numero = 4	           |Números                                                                      |
+|BOOLEAN	        |let boolean= true         |Valores true o false                                                         |
 |NULL               |let nulo = null           |representa la ausencia de valor(variable que no tiene valor).Variable que ha sido asignado intencionalmente.| 
 |UNDEFINED          |let indefinido;           |representa la ausencia de valor(variable que no tiene valor).Variable que no ha sido inicializada.|
 |NaN                |let NoNumero = "hello"*4.68|Representa algo que no es un numero.                                                                     |
