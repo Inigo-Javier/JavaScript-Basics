@@ -68,10 +68,21 @@
 
         console.log("método toFixed()", "------------>", numero3.toFixed(1))//modifica la cantidad de decimales
         console.log("método parseInt()", "------------>", parseInt(numero3))//devuelve parte entera
-        console.log(`método Number() sobre variable stringNumero de valor: ${stringNumero} y tipo de dato: ${typeof stringNumero}   ------------------>    valor:${Number(stringNumero)}y tipo de dato: ${typeof Number(stringNumero)}`)
+        console.log(`método Number() sobre variable stringNumero de valor: ${stringNumero} y tipo de dato: ${typeof stringNumero}   ------------------>    valor:${Number(stringNumero)} y tipo de dato: ${typeof Number(stringNumero)}`)
 
 
         console.log("----------------------------------------------------------------")
+        console.log("***** ejemplo BOOLEANS*****")
+
+
+        console.log(`valores falsy: 7    `)
+        console.log(`1-----> 0 -----> ${Boolean(0)}`)
+        console.log(`6-----> false----> ${Boolean(false)}`)
+        console.log(`5-----> "" o '' (string vacío)------> ${Boolean("")}`)
+        console.log(`4-----> undefined ---->${Boolean(undefined)}`)
+        console.log(`2-----> null --->${Boolean(null)}`)
+        console.log(`3-----> NaN ----->${Boolean(NaN)}`)
+        console.log(`7-----> nodo no existente. Window.document.all---> ${Boolean(document.all)}`)
 
 
     </script>
