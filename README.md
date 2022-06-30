@@ -19,14 +19,14 @@ JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
 
 
 
-|Valores Primitivos |	EJEMPLO    |	Description   |
-|-------------------|:-------------|:----------------:|
-|STRING             |	           |	              |
-|NUMBER             |	           |	              |
-|BOOLEAN	        |	           |	              |
-|NULL               |              |	              |
-|UNDEFINED          |	           |	              |
-|NaN                |	           |	              |
+|Valores Primitivos |	EJEMPLO                |	Description                                                              |
+|-------------------|:-------------------------|:---------------------------------------------------------------------------:|
+|STRING             |	                       |	                                                                         |
+|NUMBER             |	                       |	                                                                         |
+|BOOLEAN	        |	                       |	                                                                         |
+|NULL               |let nulo = null           |representa la ausencia de valor(variable que no tiene valor).Variable que ha sido asignado intencionalmente.| 
+|UNDEFINED          |let indefinido;           |representa la ausencia de valor(variable que no tiene valor).Variable que no ha sido inicializada.|
+|NaN                |	           |	                                                                                   |
                      
 
 
