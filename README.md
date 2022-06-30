@@ -26,7 +26,7 @@ JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
 |BOOLEAN	        |	                       |	                                                                         |
 |NULL               |let nulo = null           |representa la ausencia de valor(variable que no tiene valor).Variable que ha sido asignado intencionalmente.| 
 |UNDEFINED          |let indefinido;           |representa la ausencia de valor(variable que no tiene valor).Variable que no ha sido inicializada.|
-|NaN                |	           |	                                                                                   |
+|NaN                |let NoNumero = "hello"*4.68|Representa algo que no es un numero.                                                                     |
                      
 
 
