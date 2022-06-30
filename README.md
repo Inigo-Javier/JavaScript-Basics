@@ -31,10 +31,24 @@ JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
 
 
 
-|Valores No Primitivos o Compuestos|	EJEMPLO    |	Description   |
-|----------------------------------|:--------------|:----------------:|
-|OBJECT                            |	       	   |                  |
-|ARRAY                             |	           |                  |
-|FUNCTION	                       |               |                  |
-| CLASS                            |	           |                  |
-                   
+|Valores No Primitivos o Compuestos  |	Description                                                               |
+|------------------------------------|:---------------------------------------------------------------------------|
+|FUNCTION	                         |Bloque de código autocontenido(independiente al Global scope) y reutilizable|
+|OBJECT                              |	       	                                                                  |
+|ARRAY                               |	                                                                          |
+|CLASS                               |	                                                                          |
+
+
+
+|CREAR FUNCIONES	|	TIPOS                        |	
+|-------------------|:-------------------------------|
+| funcion declarada |  function funcionEjemplo(){}   |   
+| funcion expresada |  const funcionEjemplo= ()=>{}  |            
+
+
+
+1. ORDENAMIETO DEL CÓDIGO
+    1. Importacion de módulos
+    2. Declaracion de variables
+    3. Declaracion de funciones
+    4. Ejecución de código
