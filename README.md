@@ -19,3 +19,22 @@ JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
 
 
 
+|Valores Primitivos |	EJEMPLO    |	Description   |
+|-------------------|:-------------|:----------------:|
+|STRING             |	           |	              |
+|NUMBER             |	           |	              |
+|BOOLEAN	        |	           |	              |
+|NULL               |              |	              |
+|UNDEFINED          |	           |	              |
+|NaN                |	           |	              |
+                     
+
+
+
+|Valores No Primitivos o Compuestos|	EJEMPLO    |	Description   |
+|----------------------------------|:--------------|:----------------:|
+|OBJECT                            |	       	   |                  |
+|ARRAY                             |	           |                  |
+|FUNCTION	                       |               |                  |
+| CLASS                            |	           |                  |
+                   
