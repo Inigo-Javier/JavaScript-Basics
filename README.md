@@ -23,7 +23,7 @@ JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
 |-------------------|:-------------------------|:---------------------------------------------------------------------------:|
 |STRING             |let texto = "javascript"  |Cadenas de texto                                                             |
 |NUMBER             |let numero = 4	           |Números                                                                      |
-|BOOLEAN	        |let boolean= true         |Valores true o false                                                         |
+|BOOLEAN	          |let boolean= true         |Valores true o false                                                         |
 |NULL               |let nulo = null           |representa la ausencia de valor(variable que no tiene valor).Variable que ha sido asignado intencionalmente.| 
 |UNDEFINED          |let indefinido;           |representa la ausencia de valor(variable que no tiene valor).Variable que no ha sido inicializada.|
 |NaN                |let NoNumero = "hello"*4.68|Representa algo que no es un numero.                                                                     |
@@ -33,14 +33,14 @@ JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
 
 |Valores No Primitivos o Compuestos  |	Description                                                                        |
 |------------------------------------|:------------------------------------------------------------------------------------|
-|FUNCTION	                         |Bloque de código autocontenido(independiente al Global scope) y reutilizable         |
+|FUNCTION	                           |Bloque de código autocontenido(independiente al Global scope) y reutilizable         |
 |OBJECT                              |Colección de keys-values.(variables => atributos/propiedades y funciones => métodos* |
 |ARRAY                               |Referencia a valores primitivos                                                      |
 |CLASS                               |	                                                                                   |
-  *ejemplo es el método forEach() perteneciente al objeto String.
+  *ejemplo es el método forEach(), perteneciente al objeto String.
 
 
-|CREAR FUNCIONES	                 |	TIPOS                                          |	
+|CREAR FUNCIONES	                   |	TIPOS                                          |	
 |------------------------------------|:------------------------------------------------|
 | funcion declarada                  |  function funcionDeclarada(){código}            |   
 | funcion expresada(funcion anónima) |  const funcionExpresada = function()=>{código}* |            
@@ -52,3 +52,5 @@ JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
     2. Declaracion de variables
     3. Declaracion de funciones
     4. Ejecución de código
+
+
