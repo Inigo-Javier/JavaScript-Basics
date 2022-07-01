@@ -31,13 +31,13 @@ JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
 
 
 
-|Valores No Primitivos o Compuestos  |	Description                                                                       |
-|------------------------------------|:-----------------------------------------------------------------------------------|
-|FUNCTION	                         |Bloque de código autocontenido(independiente al Global scope) y reutilizable        |
-|OBJECT                              |Colección de keys-values.(variables => atributos/propiedades y funciones => métodos |
-|ARRAY                               |Referencia a valores primitivos                                                     |
-|CLASS                               |	                                                                                  |
-  
+|Valores No Primitivos o Compuestos  |	Description                                                                        |
+|------------------------------------|:------------------------------------------------------------------------------------|
+|FUNCTION	                         |Bloque de código autocontenido(independiente al Global scope) y reutilizable         |
+|OBJECT                              |Colección de keys-values.(variables => atributos/propiedades y funciones => métodos* |
+|ARRAY                               |Referencia a valores primitivos                                                      |
+|CLASS                               |	                                                                                   |
+  *ejemplo es el método forEach() perteneciente al objeto String.
 
 
 |CREAR FUNCIONES	                 |	TIPOS                                          |	
