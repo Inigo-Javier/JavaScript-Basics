@@ -35,16 +35,17 @@ JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
 |------------------------------------|:---------------------------------------------------------------------------|
 |FUNCTION	                         |Bloque de código autocontenido(independiente al Global scope) y reutilizable|
 |OBJECT                              |	       	                                                                  |
-|ARRAY                               |	                                                                          |
+|ARRAY                               |Referencia a valores primitivos                                             |
 |CLASS                               |	                                                                          |
 
 
 
-|CREAR FUNCIONES	                 |	TIPOS                                         |	
-|------------------------------------|:-----------------------------------------------|
-| funcion declarada                  |  function funcionDeclarada(){código}           |   
-| funcion expresada(funcion anónima) |  const funcionExpresada = function()=>{código} |            
+|CREAR FUNCIONES	                 |	TIPOS                                          |	
+|------------------------------------|:------------------------------------------------|
+| funcion declarada                  |  function funcionDeclarada(){código}            |   
+| funcion expresada(funcion anónima) |  const funcionExpresada = function()=>{código}* |            
 
+*aplicando arrow function => const funcionExpresada = ()=> {código}
 
 1. ORDENAMIETO DEL CÓDIGO(para evitar errores de compilación,para evitar el hoisting de las funciones declaradas.)
     1. Importacion de módulos

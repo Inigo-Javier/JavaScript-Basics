@@ -121,11 +121,24 @@
         //utilizar las funciones como expresiones, es decir, crear una funcion y sasignarsela dinámicamente a una variable.
 
         //funcion anónima:
-        funcionExpresada()//da error ReferenceError.--
+
+        // funcionExpresada()//da error ReferenceError.--
+
         const funcionExpresada = function () {
             console.log("esto es una funcion expresada, es decir que, una funcion que se le ha asignado como valor a una variable, si invocamos esta funcion antes de su declaracion JS nos dirá...")
         }
-        funcionExpresada()//se muestra por consola.
+        funcionExpresada();//se muestra por consola.
+
+        console.log("***** ejemplo ARRAYS*****")
+
+
+        const colores = ["Rojo", "Verde", "Azul"];
+        console.log(colores)
+        colores.push("Naranja")
+        console.log(colores)
+        colores.forEach(function (element, index) {
+            console.log(`<li id="${index}">${element}</li>`)
+        })
 
     </script>
 </body>
