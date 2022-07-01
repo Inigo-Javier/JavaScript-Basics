@@ -47,7 +47,7 @@ JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
 
 *aplicando arrow function => const funcionExpresada = ()=> {código}
 
-1. ORDENAMIETO DEL CÓDIGO(para evitar errores de compilación,para evitar el hoisting de las funciones declaradas.)
+1. ORDENAMIETO DEL CÓDIGO(para evitar errores de compilación y evitar el hoisting de las funciones declaradas.)
     1. Importacion de módulos
     2. Declaracion de variables
     3. Declaracion de funciones
