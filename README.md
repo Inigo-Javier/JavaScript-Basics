@@ -34,7 +34,7 @@ JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
 |Valores No Primitivos o Compuestos  |	Description                                                               |
 |------------------------------------|:---------------------------------------------------------------------------|
 |FUNCTION	                         |Bloque de código autocontenido(independiente al Global scope) y reutilizable|
-|OBJECT                              |	       	                                                                  |
+|OBJECT                              |Colección de keys-values.                                                   |
 |ARRAY                               |Referencia a valores primitivos                                             |
 |CLASS                               |	                                                                          |
 
