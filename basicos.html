@@ -408,10 +408,33 @@
 
         //IMPORTANTE: LAS ARROW FUNCTIONS TIENEN LA CAPACIDAD DE CAPTURAR EL OBJETO "THIS" DEL CONTEXTO EN EL QUE SE ENCUENTREN.EJEMPLO:
 
-        function samurai() {
-            console.log(this)//como la funcion existe dentro del contexto del navegador, this se refiere al objeto window.
+        // function samurai() {
+        //     console.log(this)
+        // }
+        //como la funcion existe dentro del contexto del navegador, this se refiere al objeto window.
+        // samurai()
+
+        const huno = {
+            nombre: "Atila",
+            gritar: function () {
+                console.log(`soy ${this.nombre} y con la function expresada tradicional me refiero al objeto:`, this)
+            },
         }
-        samurai()
+
+        huno.gritar()//this en este contexto se refiere al objeto huno.
+
+
+        const huno2 = {
+            nombre: "Atila",
+            gritar: () => {
+                console.log(`soy ${huno2.nombre} y con la function expresada arrow me refiero al objeto:`, this)
+            },
+        }
+
+        huno2.gritar()//this en este contexto se refiere al objeto window.
+
+//HAY QUE TENER MUCHO CUIDADO CON UTILIZAR ARROW FUNCTIONS PARA DECLARAR MÉTODOS DENTRO DE OBJETOS LITERALES.UNA FUNCION NORMAL RESPETA EL CONTEXTO EN EL QUE SE ENCUENTRA.
+
 
 
     </script>
