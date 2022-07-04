@@ -322,6 +322,97 @@
         console.log(nombre, apellido, age)
         //IMP: al destructurar las propiedades de un objeto se debe respetar los nombres de las propiedades del mismo.
 
+        console.log("*****Objetos Literales***** ");
+        //nueva forma de escribir atributos y metodos (incluso de saignarlos).
+        //Sin nuevas caracteristicas de objetos literales:
+        let nombre1 = "Argos",
+            edad = 10;
+        const perro = {
+            nombre1: nombre1,
+            edad: edad,
+            ladrar: function () {
+                console.log("guauuuuu guauuu")
+            }
+        }
+
+        console.log(perro)
+        perro.ladrar()
+
+        //-----nuevas características-----------:simplificar.A partir del estandar ES6(2015)
+        const dog = {
+            nombre1,
+            edad,
+            raza: "mastín",
+            ladrar() {
+                console.log("soy un perro guaui guau...")
+            }
+        }
+        console.log(dog)
+        dog.ladrar()
+
+        console.log("***** Parámetros REST & Operador Spread***** ");
+        //parámetro REST:
+        //parámetros que recibe una función
+        function sumar(a, b, ...c) {
+            let result = a + b
+
+            c.forEach(function (n) {
+                result += n
+            })
+            return result
+        }
+        console.log(sumar(1, 2))
+        console.log(sumar(1, 2, 3, 4, 34, 2, 3, 45, 123))
+
+        //Spread Operator u operador de propagación:
+        //se puede ejecutar en cualquier sentencia de nuestro código.Quita las llaves y accede a los valores.
+
+        const arr1 = [1, 2, 3, 4, 5, 6, 7],
+            arr2 = [8, 9, 10, 11, 12, 13, 14, 15];
+
+        console.log(arr1, arr2);
+
+        const arr3 = [...arr1, ...arr2]
+
+        console.log(arr3);
+
+
+        console.log("*****Arrow Functions***** ")
+        //nueva manera de simplificar las funciones expresadas(funciones anónimas).
+
+        const arrow = function () {
+            console.log("Hola, soy un arco expresado tradicional")
+        }
+
+        const arrowSimple = nombre => console.log(`Hola, soy un arco expresado simplificado y me llamo: ${nombre}`)
+
+        arrow()
+        arrowSimple("Irma")
+
+        // const sumar2 = function (a, b) {
+        //     return a + b
+        // }
+        // console.log(sumar2(1, 1))
+        //se puede simplificar como:nos ahorramos el return(está implícito)
+        const sumar2 = (a, b) => a + b
+        console.log(sumar2(10, 10))
+
+        const letras = ["a", "b", "c", "d", "e", "f", "g", "h"];
+
+        letras.forEach(function (elem, index) {
+            console.log(`el elemento: ${elem}, está en la posición :${index}`)
+        })
+        console.log("-----------con arrow function------")
+
+        letras.forEach((elem, index) => console.log(`${elem}, está en la posición :${index}`))
+
+        //IMPORTANTE: LAS ARROW FUNCTIONS TIENEN LA CAPACIDAD DE CAPTURAR EL OBJETO "THIS" DEL CONTEXTO EN EL QUE SE ENCUENTREN.EJEMPLO:
+
+        function samurai() {
+            console.log(this)//como la funcion existe dentro del contexto del navegador, this se refiere al objeto window.
+        }
+        samurai()
+
 
     </script>
 </body>
