@@ -422,7 +422,7 @@
             },
             status() {
                 console.log(`El rey de los ${this.tribu} soy YO:${this.nombre}aaaa!!!`)
-            },
+            },//forma de declarar métodos en objetos literales, igual al método anterior, pero más simplificado.
         }
 
         huno.gritar()//this en este contexto se refiere al objeto huno.
@@ -438,7 +438,48 @@
 
         huno2.gritar()//this en este contexto se refiere al objeto window.
 
-//HAY QUE TENER MUCHO CUIDADO CON UTILIZAR ARROW FUNCTIONS PARA DECLARAR MÉTODOS DENTRO DE OBJETOS LITERALES.UNA FUNCION NORMAL RESPETA EL CONTEXTO EN EL QUE SE ENCUENTRA.Utilizar function expresada tradicional(no arrow) para metodos de objetos literales.
+        //HAY QUE TENER MUCHO CUIDADO CON UTILIZAR ARROW FUNCTIONS PARA DECLARAR MÉTODOS DENTRO DE OBJETOS LITERALES.UNA FUNCION NORMAL RESPETA EL CONTEXTO EN EL QUE SE ENCUENTRA.Utilizar function expresada tradicional(no arrow) para metodos de objetos literales.
+
+        console.log("*****Prototipos******")
+
+        // const hoplita = {
+        //     nombre: "Jasón",
+        //     gritoDeGuerra() {
+        //         console.log(`soy ${this.nombre} y lucho POR ESPARTAAAAAAA`)
+        //     }
+        // };
+
+        // const hoplita2 = {
+        //     nombre: "Carlos",
+        //     gritoDeGuerra() {
+        //         console.log(`soy ${this.nombre} y lucho POR ESPARTAAAAAAA`)
+        //     }
+        // };
+
+        // hoplita.gritoDeGuerra()
+        // hoplita2.gritoDeGuerra()
+        // console.log(hoplita)
+        // console.log(hoplita2)
+
+        //para realizar un modelo que nos permita generar N hoplitas de manera rápida y eficiente.
+
+        //funcion constructora:
+        function Hoplita(nombre, rango) {
+            //Atributos
+            this.nombre = nombre;
+            this.rango = rango;
+            //métodos
+            this.gritoDeGuerra = function () {
+                console.log('lucho POR ESPARTAAAAAAA')
+            }
+            //metodos para objetos literales no aplican para funciones constructoras(this.grito()->NO).
+        }
+
+        const jason = new Hoplita("Jason", "soldado"),
+            carlos = new Hoplita("Carlos", "veterano")
+
+        console.log(jason, carlos)
+
 
 
 

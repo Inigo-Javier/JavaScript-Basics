@@ -53,4 +53,12 @@ JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
     3. Declaracion de funciones
     4. Ejecución de código
 
+`nota`: JavaScript es un lenguaje orientado a objetos basado en prototipos. El POO es edulcorante sintáctico.Tras bambalinas el compilador tranforma la clase a una función prototipal.
+El prototipo más primitivo es el `__proto__:object`
 
+* En la POO, conceptos clave:
+  * Clases -> modelo a seguir
+  * Objetos -> Una instancia(copia de un modelo a segir) de una clase.Los objetos tienen dos facultades:
+    * Atributos- características o propiedad del objeto(variables dentro del objeto).
+    * Métodos- acciones que puede realizar un objeto(getElelmtById,console.log,etc...)
+  
