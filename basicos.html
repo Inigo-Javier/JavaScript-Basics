@@ -416,12 +416,17 @@
 
         const huno = {
             nombre: "Atila",
+            tribu: "hunos",
             gritar: function () {
                 console.log(`soy ${this.nombre} y con la function expresada tradicional me refiero al objeto:`, this)
+            },
+            status() {
+                console.log(`El rey de los ${this.tribu} soy YO:${this.nombre}aaaa!!!`)
             },
         }
 
         huno.gritar()//this en este contexto se refiere al objeto huno.
+        huno.status()
 
 
         const huno2 = {
@@ -433,7 +438,7 @@
 
         huno2.gritar()//this en este contexto se refiere al objeto window.
 
-//HAY QUE TENER MUCHO CUIDADO CON UTILIZAR ARROW FUNCTIONS PARA DECLARAR MÉTODOS DENTRO DE OBJETOS LITERALES.UNA FUNCION NORMAL RESPETA EL CONTEXTO EN EL QUE SE ENCUENTRA.
+//HAY QUE TENER MUCHO CUIDADO CON UTILIZAR ARROW FUNCTIONS PARA DECLARAR MÉTODOS DENTRO DE OBJETOS LITERALES.UNA FUNCION NORMAL RESPETA EL CONTEXTO EN EL QUE SE ENCUENTRA.Utilizar function expresada tradicional(no arrow) para metodos de objetos literales.
 
 
 
