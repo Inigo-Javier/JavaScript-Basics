@@ -560,6 +560,30 @@
 
         console.log("*****Clases y Herencia******")
 
+        //las clases no reciben parámetros:
+        class Animal {
+            //método especial, se ejecuta en el mometo de instaciar la clase:
+            constructor(nombre, genero) {
+                this.nombre = nombre
+                this.genero = genero
+            }
+            sonar() {
+                console.log("Soy un ser vivo y emito sonidos")
+            }
+
+            saludar() {
+                console.log(`Hola me llamo ${this.nombre}`)
+            }
+        }
+
+        const mimi = new Animal("Mimi", "Hembra"),
+            scooby = new Animal("Scooby", "Macho")
+
+            
+        console.log(mimi);
+        console.log(scooby);
+
+
     </script>
 </body>
 
