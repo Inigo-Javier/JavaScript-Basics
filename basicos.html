@@ -463,16 +463,48 @@
 
         //para realizar un modelo que nos permita generar N hoplitas de manera rápida y eficiente.
 
+        // //funcion constructora:
+        // function Hoplita(nombre, rango) {
+        //     //Atributos
+        //     this.nombre = nombre;
+        //     this.rango = rango;
+        //     //métodos
+        //     this.gritoDeGuerra = function () {
+        //         console.log('lucho POR ESPARTAAAAAAA')
+        //     }
+        //     //metodos para objetos literales no aplican para funciones constructoras(this.grito()->NO).
+        //     this.saludar = function () {
+        //         console.log(`Hola me llamo ${this.nombre}`)
+        //     }
+        // }
+
+        // const jason = new Hoplita("Jason", "soldado"),
+        //     carlos = new Hoplita("Carlos", "veterano")
+
+        // console.log(jason, carlos)
+
+        // jason.gritoDeGuerra()
+        // jason.saludar()
+
+        // carlos.gritoDeGuerra()
+        // carlos.saludar()
+        //IMP: LAS FUNCIONES CONSTRUCTORAS SÓLO DEBEN CONTENER LOS ATRIBUTOS, PARA EVITAR DUPLICIDADES CON LOS MÉTODOS, COMO EL EJEMPLO ANTERIOR.
+
+        //procedemos a sacar los métodos de la funcion constructora:
         //funcion constructora:
         function Hoplita(nombre, rango) {
             //Atributos
             this.nombre = nombre;
             this.rango = rango;
-            //métodos
-            this.gritoDeGuerra = function () {
-                console.log('lucho POR ESPARTAAAAAAA')
-            }
-            //metodos para objetos literales no aplican para funciones constructoras(this.grito()->NO).
+        }
+
+        //Métodos agregados al prototipo de la funcion constructora:
+        Hoplita.prototype.gritoDeGuerra = function () {
+            console.log('lucho POR ESPARTAAAAAAA')
+        }
+        //metodos para objetos literales no aplican para funciones constructoras(this.grito()->NO).
+        Hoplita.prototype.saludar = function () {
+            console.log(`Hola me llamo ${this.nombre}`)
         }
 
         const jason = new Hoplita("Jason", "soldado"),
@@ -480,6 +512,11 @@
 
         console.log(jason, carlos)
 
+        jason.gritoDeGuerra()
+        jason.saludar()
+
+        carlos.gritoDeGuerra()
+        carlos.saludar()
 
 
 
