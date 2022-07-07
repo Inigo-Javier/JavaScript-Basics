@@ -895,18 +895,55 @@
 
         console.log("*****alert, confirm y prompt*****")
         //metodos que nos permite interactuar con el usuario.
-        // console.table(Object.entries(window).sort())
+        console.table(Object.entries(window).sort())
         // window.alert("Hola esto es una ALERTA")
         // window.confirm("Hola esto es una CONFIRMACION")
         // window.prompt("Esto es un AVISO y permite al usuario ingrasar un valor")
 
-        let alerta = alert("Hola esto es una ALERTA"),
-            confirmacion = confirm("Hola esto es una CONFIRMACION"),
-            aviso = prompt("Esto es un AVISO y permite al usuario ingrasar un valor");
+        // let alerta = alert("Hola esto es una ALERTA"),
+        //     confirmacion = confirm("Hola esto es una CONFIRMACION"),
+        //     aviso = prompt("Esto es un AVISO y permite al usuario ingrasar un valor");
 
-        console.log(alerta)
-        console.log(confirmacion) //nos devuelve true (aceptar) o false (cancelar)
-        console.log(aviso) // se guarda el valor cuando es true(aceptar) y si el valor es null cuando el usuario lo introduce y cancela. 
+        // console.log(alerta)
+        // console.log(confirmacion) 
+        //nos devuelve true (aceptar) o false (cancelar)
+        // console.log(aviso) 
+        // se guarda el valor cuando es true(aceptar) y si el valor es null cuando el usuario lo introduce y cancela. 
+
+        console.clear()
+        console.log("*****Expresiones Regulares*****")
+
+        //Secuencia de carácteres que forman un patrón de busqueda.Utilizado, principalmente, para la encontrar semejanzas de cadenas de carácteres.
+
+        //definicion de ExReg:
+        let cadena1 = "La gente más culta de Persia y mejor instruida en la historia, pretende que los fenicios fueron los autores primitivos de todas las discordias que se suscitaron entre los griegos y las demás naciones. Habiendo aquellos venido del mar Eritreo al nuestro, se establecieron en la misma región que hoy ocupan, y se dieron desde luego al comercio en sus largas navegaciones. Cargadas sus naves de géneros propios del Egipto."
+
+        let exReg = new RegExp("la", "ig")
+        let exReg2 = /\d/ig;
+
+        console.log(exReg.test(cadena1))
+        console.log(exReg.exec(cadena1))
+        console.log(exReg2.test(cadena1))
+        console.log(exReg2.exec(cadena1))
+
+        console.clear()
+
+        console.log("*****Funciones Anónimas Autoejecutables*****")
+            //funcion(IIFE =Immediately Invoked Function Expression) en la que englobas todo el código que quieres ejecutar.
+            //es la base de los módulos actuales.
+            //está libre de efectos secundarios que pudiera tener la invocacion de librerías de terceros u otros mismos archivos de programación propios.
+            (function () {
+                //código
+                onsole.log("Mi primer IIFE")
+            })();//siempre acabar con punto y coma.
+
+        (function () {
+            console.log("Mi segunda IIFE")
+        })();
+
+
+
+
 
     </script>
 </body>
