@@ -835,9 +835,18 @@
 
         console.clear()
         console.log("*****Operador de Cortocircuito*****")
+        //operadores lógicos AND & OR
 
+        //Cortocircuito OR -cuando el valor de la izquierda en la expresión siempre pueda validad a TRUE, es el valor que se cargará por defecto.
 
+        //Cortocircuito AND -cuando el valor de la izquierda en la expresión siempre pueda validad a FALSE, es el valor que se cargará por defecto.
 
+        function salute(nombre) {
+            nombre = nombre || "Desconocido"
+            console.log(`Hola ${nombre}`)
+        }
+        salute("Javier")
+        salute()
     </script>
 </body>
 
