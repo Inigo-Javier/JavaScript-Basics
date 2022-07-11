@@ -13,3 +13,5 @@ let pruebaClase = new clasePueba()
 pruebaClase
 
 
+// ejemplo---->   import React, {Components} from 'react'
+
