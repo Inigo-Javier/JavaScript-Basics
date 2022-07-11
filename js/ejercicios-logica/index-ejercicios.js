@@ -1,5 +1,5 @@
 import { countString, scissorString, arrayString, sentenceRepeat } from "./bloque-1.js"
-import { } from "./bloque-2.js"
+import { reversePhrase } from "./bloque-2.js"
 
 
 ///------------------------------bloque de ejercicios 1:---------------------------
@@ -46,5 +46,5 @@ console.clear()
 //------------------------------bloque de ejercicios 2:---------------------------
 
 
-
+reversePhrase("Hola Mundo")
 
