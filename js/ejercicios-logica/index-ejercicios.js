@@ -1,8 +1,8 @@
 import { countString, scissorString, arrayString, sentenceRepeat } from "./bloque-1.js"
-import { reversePhrase, repeatWord, palindromo } from "./bloque-2.js"
+import { reversePhrase, repeatWord, palindromo, deletePatron } from "./bloque-2.js"
 
 
-///------------------------------bloque de ejercicios 1:---------------------------
+//------------------------------bloque de ejercicios 1:---------------------------
 countString("holaaa")
 countString(2)
 countString()
@@ -50,11 +50,41 @@ reversePhrase("Hola Mundo")
 
 console.clear()
 
-repeatWord("hola mundo adios mundo", "mundo")
-repeatWord("hola mundo adios mundo", "mundo")
+repeatWord()
+repeatWord("", "mundo")
+repeatWord("hola mundo adios mundo")
+repeatWord("hola mundo adios mundo yoyol mundo", "mundo")
 
 console.clear()
 
+palindromo("")
 palindromo("Otto")
 palindromo("Iñigo")
 palindromo("Salas")
+palindromo("jose")
+
+console.clear()
+deletePatron()
+deletePatron("xyz1, xyz2, xyz3, xyz4 y xyz5")
+deletePatron("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------bloque de ejercicios 3:---------------------------
