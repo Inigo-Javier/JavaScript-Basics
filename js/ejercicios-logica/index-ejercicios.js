@@ -1,5 +1,5 @@
 import { countString, scissorString, arrayString, sentenceRepeat } from "./bloque-1.js"
-import { reversePhrase } from "./bloque-2.js"
+import { reversePhrase, repeatWord, palindromo } from "./bloque-2.js"
 
 
 ///------------------------------bloque de ejercicios 1:---------------------------
@@ -48,3 +48,13 @@ console.clear()
 
 reversePhrase("Hola Mundo")
 
+console.clear()
+
+repeatWord("hola mundo adios mundo", "mundo")
+repeatWord("hola mundo adios mundo", "mundo")
+
+console.clear()
+
+palindromo("Otto")
+palindromo("Iñigo")
+palindromo("Salas")
