@@ -35,6 +35,21 @@ export const getCapicua = (number = 0) => {
 
 // 11) Programa una función que calcule el factorial de un número (El factorial de un entero positivo n, se define como el producto de todos los números enteros positivos desde 1 hasta n), pe. miFuncion(5) devolverá 120.
 
-export const factorial =()=>{
-    console.log("factorial")
+export const factorial = (number = undefined) => {
+
+    if (number === undefined) return console.warn("No ingresaste un numero")
+
+    if (Math.sign(number) === -1) return console.warn("No puedes introducir valores negativos")
+
+    if (number === 0) return console.log("El factorial de 0 es 1")
+
+    number = parseFloat(number)
+
+    let factorial = 1
+    for (let i = number; i > 0; i--) {
+        factorial = factorial * i
+    }
+
+    return console.log(`factorial: ${factorial}------number: ${number}`)
+
 }

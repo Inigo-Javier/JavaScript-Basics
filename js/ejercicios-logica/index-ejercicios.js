@@ -85,7 +85,16 @@ getCapicua({})
 getCapicua("3")
 getCapicua(5005)
 getCapicua(10)
+getCapicua(252.252)
+
 
 console.clear()
 
+factorial("-100")
+factorial(-100)
+factorial("10")
+factorial(5)
+factorial(0)
 factorial()
+
+
