@@ -1,6 +1,6 @@
 import { countString, scissorString, arrayString, sentenceRepeat } from "./bloque-1.js"
 import { reversePhrase, repeatWord, palindromo, deletePatron } from "./bloque-2.js"
-import { randomNumber, getCapicua } from "./bloque-3.js"
+import { randomNumber, getCapicua, factorial } from "./bloque-3.js"
 
 
 //------------------------------bloque de ejercicios 1:---------------------------
@@ -81,3 +81,11 @@ randomNumber()
 console.clear()
 
 getCapicua()
+getCapicua({})
+getCapicua("3")
+getCapicua(5005)
+getCapicua(10)
+
+console.clear()
+
+factorial()
