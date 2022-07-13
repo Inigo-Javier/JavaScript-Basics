@@ -1,5 +1,6 @@
 import { countString, scissorString, arrayString, sentenceRepeat } from "./bloque-1.js"
 import { reversePhrase, repeatWord, palindromo, deletePatron } from "./bloque-2.js"
+import { randomNumber, getCapicua } from "./bloque-3.js"
 
 
 //------------------------------bloque de ejercicios 1:---------------------------
@@ -69,22 +70,14 @@ deletePatron("xyz1, xyz2, xyz3, xyz4 y xyz5")
 deletePatron("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.clear()
 
 
 
 //------------------------------bloque de ejercicios 3:---------------------------
+
+randomNumber()
+
+console.clear()
+
+getCapicua()
