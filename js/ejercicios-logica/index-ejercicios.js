@@ -1,6 +1,7 @@
 import { countString, scissorString, arrayString, sentenceRepeat } from "./bloque-1.js"
 import { reversePhrase, repeatWord, palindromo, deletePatron } from "./bloque-2.js"
 import { randomNumber, getCapicua, factorial } from "./bloque-3.js"
+import { primo } from "./bloque-4.js"
 
 
 //------------------------------bloque de ejercicios 1:---------------------------
@@ -97,4 +98,13 @@ factorial(5)
 factorial(0)
 factorial()
 
+console.clear()
 
+//------------------------------bloque de ejercicios 4:---------------------------
+
+
+primo("1")
+primo(2)
+primo(-3)
+primo()
+primo(11)
