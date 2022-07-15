@@ -23,10 +23,10 @@ export const primo = (number = undefined) => {
             break;
         }
     }
-
+    console.log(divisible)
     return (divisible)
-        ?console.log(`El numero ${number} No es primo`)
-        :console.log(`El numero ${number} Sí es primo`)
+        ? console.log(`El numero ${number} No es primo`)
+        : console.log(`El numero ${number} Sí es primo`)
 
 }
 

@@ -103,8 +103,11 @@ console.clear()
 //------------------------------bloque de ejercicios 4:---------------------------
 
 
-primo("1")
-primo(2)
-primo(-3)
-primo()
-primo(11)
+// primo("1")
+// primo(2)
+// primo(-3)
+// primo()
+// primo(13)
+// primo(5)
+primo(15)
+
