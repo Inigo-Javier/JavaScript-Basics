@@ -8,8 +8,7 @@
 
 //Relog en el navegador:
 
-setInterval(() => {
-    console.log(new Date().toLocalTimeString())
-}, 1000)
+// setInterval(() => {
+//     console.log(new Date().toLocaleTimeString())
+// }, 1000)
 
-    
