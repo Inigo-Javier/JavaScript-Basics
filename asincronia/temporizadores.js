@@ -8,7 +8,18 @@
 
 //Relog en el navegador:
 
-// setInterval(() => {
+// let temporizador = setInterval(() => {
 //     console.log(new Date().toLocaleTimeString())
 // }, 1000)
+
+// let temporizador1 = setTimeout(() => {
+//     console.log("-----------------SetTimeout")
+// }, 3000)
+
+// clearTimeout(temporizador1)
+// clearInterval(temporizador)
+// console.log("despues del clearTimeout")
+// console.log("despues del clearInterval")
+
+
 
