@@ -79,8 +79,11 @@ El prototipo más primitivo es el `__proto__:object`
 `Imagen`: Las peticiones (REQUESTS) se registran las funciones de tipo callback (JS tiene diferentes mecanismos para trabajar la asincronía, el principal son la funciones de tipo callback) depende de las peticiones que vayamos haciendo, por ejemplo acceso a los ficheros del sistema(File System--> en el navegasdor no tenemos acceso),consumo de una api, solicitar datos de una Database, hacer procesamiento, etc.
 
 Las operaciones se van apilando y conforme estas terminan, regresan al event loop, que manda un mensaje o notificación(Trigger Callback) al ususario.
-
+ 
 ---
+
+En la runtime de JS, hay un concepto denominado Call Stack
+lifo
 
 
   
