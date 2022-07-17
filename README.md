@@ -74,7 +74,10 @@ El prototipo más primitivo es el `__proto__:object`
       3. Operaciones Bloqueantes y No Bloqueantes.
         1. Bloqueante: aquella que no devuelve el control a la aplicación hasta que termine toda su tarea.
         2. No Bloqueante: las operaciones se ejecutan y devuelven inmediatamente el control al hilo principal de la aplicación.No importando si han terminado o no.
-      4. Operaciones Sincronas y Asíncronas.
+      4. Operaciones Sincronas y Asíncronas;Se refieren a cuándo tendrá lugar la respuesta.
+        1. O.Sincrono: 
+        2. O.Asincrono: 
+      
 ---
 `Nota`: JavaScript trabaja bajo un modelo asíncrono y no bloqueante y tiene un loop de eventos implementados de un sólo hilo, Single thread, para operaciones de entrada y salida (I/O).Gracias a esto JS es áltament concurrente(), a pesar de que sea un lenguaje de un sólo hilo.
 
