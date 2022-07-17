@@ -95,8 +95,10 @@ JavaScript trabaja con filosofía lifo(last in first out) para la ejecución de 
 
 ---
 
-### Mecanismos para trabajar la asincronía en Javascript:
-#### 1. 
+## Mecanismos para trabajar la asincronía en Javascript:
+
+### 1. CallBacks:
+Función que se va a ejecutar después de que otra lo haga.
 
 
 
