@@ -15,7 +15,7 @@ a parti de ES6: se añade los Block scope, con la palabra reservada `let` y `con
 |  `var`   |     Global scope        | variable disponible en objeto window               |
 
 
-JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
+## JavaScript [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
 
 
 
@@ -64,7 +64,7 @@ El prototipo más primitivo es el `__proto__:object`
 
 
 
----
+## Asincronía en JavaScrip:
 
 1. Procesamiento Single thread y Multi thread.
       1. Operaciones de CPU y Operaciones de Input/output.
@@ -94,6 +94,9 @@ En la runtime de JS, hay un concepto denominado Call Stack, que apila las tareas
 JavaScript trabaja con filosofía lifo(last in first out) para la ejecución de las distintas tareas apiladas.
 
 ---
+
+### Mecanismos para trabajar la asincronía en Javascript:
+#### 1. 
 
 
 
