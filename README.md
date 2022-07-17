@@ -69,21 +69,29 @@ El prototipo más primitivo es el `__proto__:object`
 1. Procesamiento Single thread y Multi thread.
       1. Operaciones de CPU y Operaciones de Input/output.
       2. Operaciones Consurrentes y Paralelas.
+        1. Concurrencia: Las tareas progresan al mismo tiempo. 
+        2. Paralelismo:  Las tareas se ejecutan al unísono.
       3. Operaciones Bloqueantes y No Bloqueantes.
+        1. Bloqueante: aquella que no devuelve el control a la aplicación hasta que termine toda su tarea.
+        2. No Bloqueante: las operaciones se ejecutan y devuelven inmediatamente el control al hilo principal de la aplicación.No importando si han terminado o no.
       4. Operaciones Sincronas y Asíncronas.
 ---
 `Nota`: JavaScript trabaja bajo un modelo asíncrono y no bloqueante y tiene un loop de eventos implementados de un sólo hilo, Single thread, para operaciones de entrada y salida (I/O).Gracias a esto JS es áltament concurrente(), a pesar de que sea un lenguaje de un sólo hilo.
 
-![imagen event loop](https://redberry.international/wp-content/uploads/2021/12/wrtzmt2ty03ksew7ehvx-768x384.jpeg "foto de bodegas")
+![imagen event loop](https://redberry.international/wp-content/uploads/2021/12/wrtzmt2ty03ksew7ehvx-768x384.jpeg "foto event loop en JavaScript")
 
-`Imagen`: Las peticiones (REQUESTS) se registran las funciones de tipo callback (JS tiene diferentes mecanismos para trabajar la asincronía, el principal son la funciones de tipo callback) depende de las peticiones que vayamos haciendo, por ejemplo acceso a los ficheros del sistema(File System--> en el navegasdor no tenemos acceso),consumo de una api, solicitar datos de una Database, hacer procesamiento, etc.
+`Imagen(diagrama)`: Las peticiones (REQUESTS) registran las funciones de tipo callback (JS tiene diferentes mecanismos para trabajar la asincronía, el principal son la funciones de tipo callback) depende de las peticiones que vayamos haciendo, por ejemplo acceso a los ficheros del sistema(File System--> en el navegasdor no tenemos acceso),consumo de una api, solicitar datos de una Database, hacer procesamiento, etc.
 
 Las operaciones se van apilando y conforme estas terminan, regresan al event loop, que manda un mensaje o notificación(Trigger Callback) al ususario.
  
 ---
 
-En la runtime de JS, hay un concepto denominado Call Stack
-lifo
+En la runtime de JS, hay un concepto denominado Call Stack, que apila las tareas, y dependiendo de si son asincronas o sincronas, se ejecutan.
+
+JavaScript trabaja con filosofía lifo(last in first out) para la ejecución de las distintas tareas apiladas.
+
+---
+
 
 
   
