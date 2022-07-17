@@ -19,6 +19,9 @@ cuadradoCallback(0, (value, result) => {
                     console.log(` Callback: ${value}, ${result}`)
                     cuadradoCallback(5, (value, result) => {
                         console.log(` Callback: ${value}, ${result}`)
+                        console.log("Fin Callback")
+                        console.log("Callback HEll!!!!")
+                        console.log("http://callbackhell.com/")
                     })
                 })
             })
