@@ -99,6 +99,13 @@ JavaScript trabaja con filosofía lifo(last in first out) para la ejecución de 
 
 ### 1. CallBacks:
 Función que se va a ejecutar después de que otra lo haga.
+### 2. Promesas:
+
+Resuelve callback hell y manejo de errores.
+Trabajan con 
+
+
+
 
 
 
