@@ -1,5 +1,5 @@
 // console.log("*****Objetos Literales***** ");
-// //nueva forma de escribir atributos y metodos (incluso de saignarlos).
+// //nueva forma de escribir atributos y metodos (incluso de asignarlos).
 // //Sin nuevas caracteristicas de objetos literales:
 // let nombre1 = "Argos",
 //     edad = 10;
