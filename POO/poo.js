@@ -47,10 +47,3 @@ console.log(book.price)
 
 
 
-
-
-// console.log(book.private)
-
-
-
-
